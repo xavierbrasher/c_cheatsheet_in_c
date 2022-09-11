@@ -46,17 +46,17 @@ int constants() {
 int get_user_input() {
 	int age;
 	printf("Enter your age: ");
-	scanf("%d", &age);
+	scanf("%d", &age); // you use scanf with a format and then reference the mut variable
 	printf("You are %d years old\n", age);
 
 	double gpa;
 	printf("Whats your GPA: ");
-	scanf("%lf", &gpa);
+	scanf("%lf", &gpa); // you use scanf with a format and then reference the mut variable
 	printf("Your GPA is %f\n", gpa);
 	
 	char name[100]; // worse alternative for getting char_array
 	printf("Whats your name: ");
-	scanf("%s", name);
+	scanf("%s", name); // you use scanf with format but on char_arrays, you just type in the variable and not the reference
 	printf("Your name is %s\n", name);
 	
 	getchar();
