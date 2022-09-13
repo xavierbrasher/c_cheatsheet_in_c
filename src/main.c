@@ -103,8 +103,25 @@ int mad_libs_game() {
 }
 
 int arrays() {
-	
+	double s[4] = {1,2,4,5};
+	s[0] = 5.3;
+	s[1] = 3.2;
+	printf("%f\n", s[0]);
+
+	char phrase[20] = "Wow Array"; // strings
+	printf("Wow phrase: %s \n", phrase);
+
 	return 0;
+
+
+void sayHi() {
+	printf("Hello user \n");
+}
+
+void function() {
+	printf("Top");
+	sayHi();
+	printf("Bottom");
 }
 
 int main() {
@@ -115,7 +132,8 @@ int main() {
 	// get_user_input();
 	// basic_calculater();
 	// mad_libs_game();
-	arrays();
+	// arrays();
+	function();
 
 	return 0;
 }
